@@ -14,16 +14,13 @@
 @property (nonatomic, assign) CGFloat columnWidth;
 //柱体间距
 @property (nonatomic, assign) CGFloat columnSpace;
-//柱体颜色
-@property (nonatomic, strong) UIColor *colorForColumn;
-//柱体字体
-@property (nonatomic, strong) UIFont  *fontForValueLabel;
-//柱体字体颜色
-@property (nonatomic, strong) UIColor *colorForValueLabel;
-//X轴字体
-@property (nonatomic, strong) UIFont  *fontForXLabel;
-//X轴字体颜色
-@property (nonatomic, strong) UIColor *colorForXLabel;
+
+//柱体
+@property (nonatomic, strong) UIView  *columnView;
+//柱体文字
+@property (nonatomic, strong) UILabel *valueLabel;
+//X轴数字
+@property (nonatomic, strong) UILabel *xLineNumLabel;
 
 - (void)setCellContent:(NSInteger)value xLineText:(NSString *)xText perHeight:(CGFloat)perHeight xLabelHeigth:(CGFloat)xLabelHeight;
 
